@@ -94,7 +94,7 @@ body {
 
 .image__overlay {
     position: absolute;
-    width: 35.9%;
+    width: 490px;
     border-radius: 0 12px 12px 0;
     height: 405px;
     background: var(--soft-violet);
