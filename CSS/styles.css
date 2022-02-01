@@ -86,23 +86,17 @@ body {
     font-size: 12px;
 }
 
+.card__img {
+    overflow: hidden;
+    height: 405px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: blue;
+    background: linear-gradient(rgb(170, 92, 219), rgb(170, 92, 219), url(/images/image-header-desktop.jpg));
+}
+
 
 .card__img img {
-    display: block;
     height: 405px;
     border-radius: 0 12px 12px 0;
-    position: relative;
 }
-
-
-.card__img img::before {
-    content: "";
-    position: absolute;
-    background-color: var(--soft-violet);
-    z-index: 999;
-    width: 100%;
-    height: 100%;
-    left: 0;
-   top: 0;
-}
-
