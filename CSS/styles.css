@@ -115,7 +115,6 @@ body {
     .card__wrapper {
         background: var(--desaturated-blue);
         width: 320px;
-        height: 250px;
         padding: 2rem;
         border-radius: 0 0 12px 12px;
     }
