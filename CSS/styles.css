@@ -29,8 +29,9 @@ body {
 
 .card__wrapper {
     background: var(--desaturated-blue);
-    padding: 2.8rem 3rem;
+    padding: 2.95rem 3rem;
     border-radius: 12px 0 0 12px;
+ 
 }
 
 
@@ -87,18 +88,103 @@ body {
 }
 
 .card__img img {
-    height: 405px;
+    height: 409px;
     border-radius: 0 12px 12px 0;
     position: relative;
 }
 
 .image__overlay {
     position: absolute;
-    width: 490px;
+    width: 496px;
     border-radius: 0 12px 12px 0;
-    height: 405px;
+    height: 410px;
     background: var(--soft-violet);
     z-index: 1;
     overflow: hidden;
     opacity: 0.6;
+}
+
+@media (max-width: 480px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .card__wrapper {
+        background: var(--desaturated-blue);
+        width: 320px;
+        padding: 2rem;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .card__details {
+        padding: 0;
+    }
+
+    .card__details h2 {
+        color: var(--white);
+        width: 244px;
+        font-size: 24px;
+        text-align: center;
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+
+    .card__details p {
+        color: var(--transparent-white);
+        line-height: 1.5;
+        width: 244px;
+        padding-bottom: 40px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .card__stats {
+        width: 310px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card__stats .card__stats__child:nth-last-child(1) {
+        padding-right: 2.8rem;
+    }
+
+    .card__stats .card__stats__child h3 {
+        color: var(--white);
+        text-transform: uppercase;
+        font-weight: 600;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+
+    .card__stats .card__stats__child p {
+        color: var(--slight-transparent-white);
+        text-transform: uppercase;
+        font-size: 12px;
+        text-align: center;
+        padding-bottom: 1.8rem;
+    }
+
+    .image__overlay {
+        position: absolute;
+        width: 320px;
+        border-radius: 12px 12px 0 0;
+        height: 250px;
+        background: var(--soft-violet);
+        z-index: 1;
+        overflow: hidden;
+        opacity: 0.6;
+    }
+
+    .card__img img {
+        height: 250px;
+        width: 320px;
+        border-radius: 12px 12px 0 0;
+        position: relative;
+    }
 }
