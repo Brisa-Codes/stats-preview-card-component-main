@@ -174,7 +174,7 @@ body {
         position: absolute;
         width: 320px;
         border-radius: 12px 12px 0 0;
-        height: 250px;
+        height: 254px;
         background: var(--soft-violet);
         z-index: 1;
         overflow: hidden;
